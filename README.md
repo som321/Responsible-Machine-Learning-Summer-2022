@@ -18,6 +18,7 @@ Your model card must include the following sections: Intended use, Training data
 ### Structure (6 pts.)
 Abid Shafiullah (abidshafi@gwu.edu) - Somendar Chaudhary (somender@gwu.edu) - Yasir Mohammad (yasir@gwu.edu)
 * Clearly delineated sections for:
+*   * Intended use ( 1/2 pt.)
 * **Primary intended uses**: This model is an *example* probability of default classifier, with an *example* use case for determining eligibility for a credit line increase.
 * **Primary intended users**: Students in GWU DNSC 6301 bootcamp.
 * **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
