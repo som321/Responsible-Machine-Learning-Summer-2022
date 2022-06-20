@@ -17,12 +17,11 @@ Your model card must include the following sections: Intended use, Training data
 ## WIP Rubric:
 ### Structure (6 pts.)
 Abid Shafiullah (abidshafi@gwu.edu) - Somendar Chaudhary (somender@gwu.edu) - Yasir Mohammad (yasir@gwu.edu)
+* Model version: 1.0
+* License: Apache License
+* Model date: June 2022
 * Clearly delineated sections for:
 *   * Intended use ( 1/2 pt.)
-* **Primary intended uses**: This model is an *example* probability of default classifier, with an *example* use case for determining eligibility for a credit line increase.
-* **Primary intended users**: Students in GWU DNSC 6301 bootcamp.
-* **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
-
   * Training data ( 1/2 pt.)
   * Evaluation data ( 1/2 pt.)
   * Model details ( 1/2 pt.)
@@ -36,6 +35,11 @@ Abid Shafiullah (abidshafi@gwu.edu) - Somendar Chaudhary (somender@gwu.edu) - Ya
 
 ### Content (13 pts.)
 * Intended use (2 pts.)
+* * **Primary intended uses**: To predict whether or not the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different
+demographic groups in the US.)
+* **Primary intended users**: Students in GWU DNSC 6209.
+* **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
+
   * Describe the business value of your group's best remediated model
   * Describe how your group's best remediated model is designed to be used
   * Describe the intended users for your group's best remediated model
