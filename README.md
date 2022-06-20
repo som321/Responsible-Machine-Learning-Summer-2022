@@ -35,10 +35,10 @@ Abid Shafiullah (abidshafi@gwu.edu) - Somendar Chaudhary (somender@gwu.edu) - Ya
 
 ### Content (13 pts.)
 * Intended use (2 pts.)
- * **Primary intended uses**: To predict whether or not the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different
+ ** **Primary intended uses**: To predict whether or not the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different
 demographic groups in the US.)
- * **Primary intended users**: Students in GWU DNSC 6209.
- * **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
+ ** **Primary intended users**: Students in GWU DNSC 6209.
+ ** **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
 
   * Describe the business value of your group's best remediated model
   * Describe how your group's best remediated model is designed to be used
