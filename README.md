@@ -108,20 +108,51 @@ This analysis shows that even with a selective cutoff of 0.17, less discriminato
   * State the source of evaluation (or test) data
   *  * ** Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
   * State the number of rows in evaluation (or test) data
-  *  * ** 19830
+  *  * ** 19830 (without the header). With header it is 19831
   * State any dierences in columns between training and evaluation (or test) data
   * * ** There is no difference in the columns between training and evaluation (or test) data
 * Model details (2 pts.)
   * State the columns used as inputs in your group's best remediated model
+  *  * ** 'property_value_std', 'no_intro_rate_period_std', 'loan_amount_std', 'income_std', 'conforming', 'intro_rate_period_std', 'debt_to_income_ratio_std', and 'term_360'
   * State the columns used as targets in your group's best remediated model
+  *  * ** 'high_priced'
   * State the type of your group's best remediated model
+  * * ** XGBoost
   * State the software used to implement your group's best remediated model
+  *  * ** 'xgboost', 'H20', 'interpret.glassbox', 'interpret.perf', 'numpy', 'pandas', 'time', 'matplotlib.pyplot', and 'matplotlib.lines'.
   * State the version of the modeling software for your group's best remediated model
+  * * ** 'xgboost 1.4.2', 'h20 3.36.1.1', 'interpret 0.2.4', 'numpy 1.18.5', and 'pandas 1.0.5
   * State the hyperparameters or other settings of your group's best remediated model
+  *  * ** 'colsample_bytree': 0.3, 'colsample_bylevel': 0.9, 'eta': 0.005, 'max_depth': 7, 'reg_alpha': 0.05, 'reg_lambda': 0.0005, 'subsample': 0.7, 'min_child_weight': 10, 'gamma': 0.4, 'booster': 'gbtree', 'eval_metric': 'auc', 'monotone_constraints': (1,), 'nthread': 4, 'objective': 'binary:logistic', 'seed': 12345
 * Quantitative analysis (3 pts.)
   * State the metrics used to evaluate your group's best remediated model
+  *  * ** AUC 
   * State the values of the metrics for training, validation, and evaluation (or test) data evaluation (or test) metrics come from the most recent class full evaluation results, link under Assignment 1.
+  *  * ** Explainable Boosting Machine - Validation AUC 0.8249 (RANK 1); Monotonic XGBoost - Validation AUC 0.7920 (RANK 2); and Elastic Net - Validation AUC 0.7538 (RANK 3)
   * Provide at least one plot or table from each weekly assignment for a total of at least six plots, that must include the global variable importance and partial dependence of your group's best remediated model.
+  *  * ** Assignment 1
+  *  ![image](https://user-images.githubusercontent.com/89049995/174693537-dbb8b160-8dd8-45b0-b0f0-af9aa87965de.png)
+
+  *  * ** Assignment 2 (1st graph)
+  *  ![image](https://user-images.githubusercontent.com/89049995/174693795-29cf173c-673c-4e3e-9534-8dd3ed3f2bf5.png)
+
+  *  * ** Assignment 2 (2nd graph)
+  *  ![image](https://user-images.githubusercontent.com/89049995/174693858-b0ec807b-f55f-4d38-ae47-c4f367fc3058.png)
+
+  *  * ** Assignment 2 (3rd graph)
+  *  ![image](https://user-images.githubusercontent.com/89049995/174693927-d70ea3b8-943a-4752-8b43-d45bcd95addc.png)
+
+  *  * ** Assignment 3 
+  *  ![image](https://user-images.githubusercontent.com/89049995/174693974-9ac27786-f93a-4bc9-acce-22d0dddbb510.png)
+
+  *  * ** Assignment 4 (1st graph)
+  *  ![image](https://user-images.githubusercontent.com/89049995/174694055-e80f5e1e-35ac-4279-8f0c-b942c19115b4.png)
+
+  *  * ** Assignment 4 (2nd graph)
+  *  ![image](https://user-images.githubusercontent.com/89049995/174694068-1840af4d-4115-4ef7-9e82-1ee7740f3bd2.png)
+
+  *  * ** Assignment 5
+
   * Address other alternative models considered
 * Ethical considerations (2 pts.)
   * Describe potential negative impacts of using your group's best remediated model:
