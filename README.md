@@ -158,6 +158,7 @@ This analysis shows that even with a selective cutoff of 0.17, less discriminato
   * Describe potential negative impacts of using your group's best remediated model:
    * Consider math or software problems
    * Consider real-world risks: who, what, when and how?
+   *  * ** The model can improve accuracy but if there is bias in the data collection then it would lead to conflicting results
 * Describe potential uncertainties relating to the impacts of using your group's best remediated model:
   * Consider math or software problems
   * Consider real-world risks: who, what, when and how?
