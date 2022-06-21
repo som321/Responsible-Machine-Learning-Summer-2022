@@ -54,8 +54,11 @@ This analysis shows that even with a selective cutoff of 0.17, less discriminato
   * State whether your group's best remediated model can or cannot be used for any additional purposes
 * Training data (2 pts.)
   * State the source of training data
+  * * **  Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
   * State how training data was divided into training and validation data
+  * * ** 70/30
   * State the number of rows in training and validation data
+  *  * ** Train data rows = 112253, columns = 23; and the Validation data rows = 48085, columns = 23
   * Define the meaning of all training data columns
 
 * Data dictionary: 
@@ -103,8 +106,11 @@ This analysis shows that even with a selective cutoff of 0.17, less discriminato
   * Define the meaning of all engineered columns
 * Evaluation data (2 pts.)
   * State the source of evaluation (or test) data
+  *  * ** Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
   * State the number of rows in evaluation (or test) data
+  *  * ** 19830
   * State any dierences in columns between training and evaluation (or test) data
+  * * ** There is no difference in the columns between training and evaluation (or test) data
 * Model details (2 pts.)
   * State the columns used as inputs in your group's best remediated model
   * State the columns used as targets in your group's best remediated model
