@@ -62,17 +62,44 @@ This analysis shows that even with a selective cutoff of 0.17, less discriminato
 
 | Name | Modeling Role | Measurement Level| Description|
 | ---- | ------------- | ---------------- | ---------- |
-|**ID**| ID | int | unique row indentifier |
-| **LIMIT_BAL** | input | float | amount of previously awarded credit |
-| **SEX** | demographic information | int | 1 = male; 2 = female
-| **RACE** | demographic information | int | 1 = hispanic; 2 = black; 3 = white; 4 = asian |
-| **EDUCATION** | demographic information | int | 1 = graduate school; 2 = university; 3 = high school; 4 = others |
-| **MARRIAGE** | demographic information | int | 1 = married; 2 = single; 3 = others |
-| **AGE** | demographic information | int | age in years |
-| **PAY_0, PAY_2 - PAY_6** | inputs | int | history of past payment; PAY_0 = the repayment status in September, 2005; PAY_2 = the repayment status in August, 2005; ...; PAY_6 = the repayment status in April, 2005. The measurement scale for the repayment status is: -1 = pay duly; 1 = payment delay for one month; 2 = payment delay for two months; ...; 8 = payment delay for eight months; 9 = payment delay for nine months and above |
-| **BILL_AMT1 - BILL_AMT6** | inputs | float | amount of bill statement; BILL_AMNT1 = amount of bill statement in September, 2005; BILL_AMT2 = amount of bill statement in August, 2005; ...; BILL_AMT6 = amount of bill statement in April, 2005 |
-| **PAY_AMT1 - PAY_AMT6** | inputs | float | amount of previous payment; PAY_AMT1 = amount paid in September, 2005; PAY_AMT2 = amount paid in August, 2005; ...; PAY_AMT6 = amount paid in April, 2005 |
-| **DELINQ_NEXT**| target | int | whether a customer's next payment is delinquent (late), 1 = late; 0 = on-time |
+|**high_priced**| target | int | whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages |
+| **conforming** | input | int | whether the mortgage conforms to normal standards (1), or whether the loan is different (0) |
+| **debt_to_income_ratio_std** | input | int | standardized debt-to-income ratio for mortgage applicants | 
+| **debt_to_income_ratio_missing** | demographic information | int | missing marker (1) for debt to income ratio std |
+| **income_std** | input | int | standardized income for mortgage applicants |
+| **loan_amount_std	** | input | int | standardized amount of the mortgage for applicants |
+| **intro_rate_period_std	** | input | int | standardized introductory rate period for mortgage applicants |
+| **loan_to_value_ratio_std** | input | int | ratio of the mortgage size to the value of the property for mortgage applicants |
+| **no_intro_rate_period_std** | input | int | whether (1) or not (0) a mortgage does not include an introductory rate period |
+| **property_value_std** | input | int | value of the mortgaged property |
+| **term_360**| input | int | whether the mortgage is a standard 360 month mortgage (1) or a different type of mortgage (0) |
+| **male**| demographic information | int | whether a person identifies as male (1) or not male (0) |
+| **female**| demographic information | int | whether a person identifies as female (1) or not female (0) |
+| **black**| demographic information | int | whether a person identifies as black (1) or not black (0) |
+| **asian**| demographic information | int | whether a person identifies as asian (1) or not asian (0) |
+| **white**| demographic information | int | whether a person identifies as white (1) or not white (0) |
+| **amind**| demographic information | int | whether a person identifies as amind (1) or not amind (0) |
+| **hipac**| demographic information | int | whether a person identifies as hipac (1) or not hipac (0) |
+| **hispanic**| demographic information | int | whether a person identifies as hispanic (1) or not hispanic (0) |
+| **non_hispanic**| demographic information | int | whether a person identifies as non_hispanic (1) or not non_hispanic (0) |
+| **agegte62**| demographic information | int | 	whether a person is over the age of 62 (1) or not over the age of 62 (0) |
+| **agelt62E**| demographic information | int | whether a person is below the age of 62 (1) or not below the age of 62 (0) |
+| **row_id**| ID | int | unique row indentifier |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   * Define the meaning of all engineered columns
 * Evaluation data (2 pts.)
   * State the source of evaluation (or test) data
