@@ -41,13 +41,13 @@ demographic groups in the US.)
  * * **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
 
   * Describe the business value of your group's best remediated model
-  * ** The best remediated model is used for:
-  * ** Discrimination testing and attempt remediating of discovered discrimination using AIR (adverse impact ratio)
-  * ![image](https://user-images.githubusercontent.com/89049995/174690589-a3f65396-bfa9-491d-a7d6-d6e7c124b23c.png)
+  * * ** The best remediated model is used for:
+  * * ** Discrimination testing and attempt remediating of discovered discrimination using AIR (adverse impact ratio)
+  * * ![image](https://user-images.githubusercontent.com/89049995/174690589-a3f65396-bfa9-491d-a7d6-d6e7c124b23c.png)
 
-  * ** Retrained the most accurate model above 0.8 AIR
-  * ** Best AUC: 0.7809 above 0.8 AIR (0.8116). Remediated EBM retrained with AUC: 0.7809. 
-  * ** Checked that other groups are not adversely impacted y change: Adverse impact ratio for Asian people vs. White people: 1.146. Adverse impact ratio for Black people vs. White people: 0.812. Adverse impact ratio for Females vs. Males: 0.957
+  * * ** Retrained the most accurate model above 0.8 AIR
+  * * ** Best AUC: 0.7809 above 0.8 AIR (0.8116). Remediated EBM retrained with AUC: 0.7809. 
+  * * ** Checked that other groups are not adversely impacted y change: Adverse impact ratio for Asian people vs. White people: 1.146. Adverse impact ratio for Black people vs. White people: 0.812. Adverse impact ratio for Females vs. Males: 0.957
 This analysis shows that even with a selective cutoff of 0.17, less discriminatory models are available. The new set of features and hyperparameters leads to a ~13% increase in AIR with a ~5% decrease in AUC.
   * Describe how your group's best remediated model is designed to be used
   * Describe the intended users for your group's best remediated model
