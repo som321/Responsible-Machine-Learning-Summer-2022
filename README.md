@@ -35,9 +35,10 @@ Abid Shafiullah (abidshafi@gwu.edu) - Somendar Chaudhary (somender@gwu.edu) - Ya
 
 ### Content (13 pts.)
 * Intended use (2 pts.)
- * * **Primary intended uses**: To predict whether or not the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different
-demographic groups in the US.)
- * * **Primary intended users**: Students in GWU DNSC 6209.
+ * * **Primary intended uses**: 
+ * * ** To predict whether or not the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US.)
+ * * ** The intended use is also to provide an interpretable machine learning model, which is transparent and helps prevent biases.
+ * * **Primary intended users**: Students and academics interested in interpretable machine learning models.
  * * **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
 
   * Describe the business value of your group's best remediated model
@@ -104,13 +105,16 @@ This analysis shows that even with a selective cutoff of 0.17, less discriminato
 
 
   * Define the meaning of all engineered columns
+  * * ** phat and r were engineered for residual analysis.
+  *  * ** phat: It is a numeric input that helps to predict probabilities of high-priced mortgage 
+  *  * ** r: It is a numeric input and is log loss residual for the predicted probabilities.
 * Evaluation data (2 pts.)
   * State the source of evaluation (or test) data
   *  * ** Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
   * State the number of rows in evaluation (or test) data
   *  * ** 19830 (without the header). With header it is 19831
   * State any dierences in columns between training and evaluation (or test) data
-  * * ** There is no difference in the columns between training and evaluation (or test) data
+  * * ** There is no difference in the columns between training and evaluation (or test) data with one exception. The high_priced column which is the target variable does not exist in test data.
 * Model details (2 pts.)
   * State the columns used as inputs in your group's best remediated model
   *  * ** 'property_value_std', 'no_intro_rate_period_std', 'loan_amount_std', 'income_std', 'conforming', 'intro_rate_period_std', 'debt_to_income_ratio_std', and 'term_360'
@@ -158,7 +162,8 @@ This analysis shows that even with a selective cutoff of 0.17, less discriminato
   * Describe potential negative impacts of using your group's best remediated model:
    * Consider math or software problems
    * Consider real-world risks: who, what, when and how?
-   *  * ** The model can improve accuracy but if there is bias in the data collection then it would lead to conflicting results
+   *  * ** The model can improve accuracy but if there is bias in the data collection then it would lead to conflicting results.
+   *  * ** The model will become less useful if the economic conditions change dramatically. For example, if the model is built using pre-pandemic time period data, it would become less useful if we are trying to use the model during the pandemic. 
 * Describe potential uncertainties relating to the impacts of using your group's best remediated model:
   * Consider math or software problems
   * Consider real-world risks: who, what, when and how?
