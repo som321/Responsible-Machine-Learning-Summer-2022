@@ -125,7 +125,7 @@ This analysis shows that even with a selective cutoff of 0.17, less discriminato
   * State the software used to implement your group's best remediated model
   *  * ** 'xgboost', 'H20', 'interpret.glassbox', 'interpret.perf', 'numpy', 'pandas', 'time', 'matplotlib.pyplot', and 'matplotlib.lines'.
   * State the version of the modeling software for your group's best remediated model
-  * * ** 'xgboost 1.4.2', 'h20 3.36.1.1', 'interpret 0.2.4', 'numpy 1.18.5', and 'pandas 1.0.5
+  * * ** 'xgboost 1.4.2', 'h20 3.36.1.2', 'interpret 0.2.7', 'numpy 1.11.1', and 'pandas 0.19.2
   * State the hyperparameters or other settings of your group's best remediated model
   *  * ** 'colsample_bytree': 0.3, 'colsample_bylevel': 0.9, 'eta': 0.05, 'max_depth': 5, 'reg_alpha': 0.005, 'reg_lambda': 0.0005, 'subsample': 0.7, 'min_child_weight': 5, 'gamma': 0.2, 'booster': 'gbtree', 'eval_metric': 'auc', 'monotone_constraints': (1, 1, 1, -1, 1, 1, -1, -1, -1, 1), 'nthread': 4, 'objective': 'binary:logistic', 'seed': 12345
 * Quantitative analysis (3 pts.)
